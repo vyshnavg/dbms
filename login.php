@@ -1,4 +1,8 @@
-﻿<!DOCTYPE html>
+﻿<?php
+  session_start();
+?>
+
+<!DOCTYPE html>
 <title>ChristUniversity_library login</title>
 <style>
 
@@ -80,14 +84,14 @@ margin:auto;
               $username = $_POST['emailid'];
               $password = $_POST['pass'];
 
-              if (empty($username)||empty($password)) {
+              /*if (empty($username)||empty($password)) {
                   echo "Sorry, Please enter Email ID and Password";
               }
-              else{
+              else{*/
                 //echo "Login Succesful";
-                mysql_connect("localhost","root","Qtel123%");
-                mysql_select_db("library");
-
+                //mysql_connect("localhost","root","Qtel123%");
+                
+              /*
                 $username=stripcslashes($username);
                 $password=stripcslashes($password);
                 $username=mysql_real_escape_string($username);
@@ -105,7 +109,26 @@ margin:auto;
                 else{
                   echo"Failed to login";
                 }
-              }
+
+
+                */
+
+                include 'dbh.php';
+                mysql_select_db("library");
+
+                $sql="SELECT * from admin where admin_id = '$username' and admin_password='$password'";
+                $result= mysql_query($sql);
+
+                if(!$row=mysql_fetch_assoc($result)){
+                  echo "Your username or password is incorrect!";
+                }
+                else{
+                  $_SESSION['admin_id']=$row['admin_id'];
+                  header("Location: admin.php");
+                }
+
+
+              //}
           }
           //CloseCon($conn);
           ?></p></center>

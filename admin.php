@@ -1,4 +1,8 @@
-﻿<!DOCTYPE html>
+﻿<?php
+  session_start();
+?>
+
+<!DOCTYPE html>
 <head>
 <title>CHRIST UNIVERSITY_LIBRARY</title>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
@@ -212,9 +216,7 @@ margin:auto;
 
 <center><h1>
 <?php 
-  $username = $_POST['emailid'];
-  echo "Welcome".$username;
-  //echo "Login Success!! Welcome".$row['admin_id'];
+  echo "Admin Panel<br>Welcome ".$_SESSION['admin_id'];
  ?>
 </h1></center>
 
