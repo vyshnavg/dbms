@@ -113,7 +113,14 @@ margin:auto;
         <p>Christ University Library</p>
 		<p>Use the login form to login as student or staff</p>
       </div>
-      
+  
+
+
+     <!--- Shiju no need of login here --> 
+
+
+
+    
       <div class="topbox last">
         <h2>Login to your account:</h2>
         <form action="#" method="post">
@@ -202,6 +209,15 @@ margin:auto;
   </div></font>
 </div>
 <!-- ####################################################################################################### -->
+
+<center><h1>
+<?php 
+  $username = $_POST['emailid'];
+  echo "Welcome".$username;
+  //echo "Login Success!! Welcome".$row['admin_id'];
+ ?>
+</h1></center>
+
 	<div class="container1">
 		<br></br><br></br>
 		<center>

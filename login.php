@@ -99,17 +99,14 @@ margin:auto;
                         die("Failed to query database".mysql_error());
                 $row=mysql_fetch_array($result);
                 if($row['admin_id']==$username && $row['admin_password']==$password){
-                  echo "Login Success!! Welcome".$row['admin_id'];
+                  //echo "Login Success!! Welcome".$row['admin_id'];
+                    header("Location: admin.php");
                 }
                 else{
                   echo"Failed to login";
                 }
-                
-                
               }
           }
-
-
           //CloseCon($conn);
           ?></p></center>
   
