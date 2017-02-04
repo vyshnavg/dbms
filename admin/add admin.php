@@ -16,17 +16,17 @@
               $password = $_POST['pass'];
 
                 include 'dbh.php';
-                mysql_select_db("library");
 
                 $sql="INSERT INTO admin VALUES ('$username','$password')";
 
-                $result= mysql_query($sql);
-                
-                if($result==1){
+                //$result= mysql_query($sql);
+                $retval = mysqli_query($conn ,$sql)or die(mysqli_error($conn));
+
+                if($retval==1){
                 	echo "Successfully Added";
                 }
                 else{
-                	echo "Failed to query database ".mysql_error();
+                	echo "Failed to query database ".mysql_error($conn);
                 }
           }
           ?>

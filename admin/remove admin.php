@@ -15,18 +15,30 @@
               //$password = $_POST['pass'];
 
                 include 'dbh.php';
-                mysql_select_db("library");
 
-                $sql="DELETE FROM admin WHERE admin_id =$username ";
+                $sql="SELECT * FROM admin WHERE admin_id =$username ";
 
-                $result= mysql_query($sql);
-                
-                if($result==1){
-                	echo "Successfully Deleted";
+                $retval = mysqli_query($conn ,$sql)or die(mysqli_error($conn));
+               
+                if(! $retval ) {
+                   die('Could not get data: ' . mysql_error($conn));
+                }
+                else if (mysqli_num_rows($retval) > 0){
+                    
+                    $sql="DELETE FROM admin WHERE admin_id =$username ";
+                    $retval = mysqli_query($conn ,$sql)or die(mysqli_error($conn));
+                    if($retval==1){
+                      echo "Successfully Deleted";
+                    }
+                    else{
+                      echo "Failed to query database ".mysqli_error($conn);
+                    }
+
                 }
                 else{
-                	echo "Failed to query database ".mysql_error();
+                  echo "not found";
                 }
+                
           }
           ?>
           	
