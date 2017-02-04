@@ -1,7 +1,4 @@
 <html>
-<head>
-<title>PHP Site Michael Mazur</title>
-</head>
 <body>
 	<?php
 		include 'dbh.php';
