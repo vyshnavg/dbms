@@ -10,6 +10,8 @@
 <link rel="icon" href="https://upload.wikimedia.org/wikipedia/en/4/48/This_is_the_graphical_mascot_of_Christ_University,_Bangalore.png">
 </head>
 <style>
+
+
 #heading
 {
 	#heading { color: #FFFFFF; }
@@ -146,10 +148,12 @@ tab1{
       <font color="white"><p><tab1>EXCELLENCE AND SERVICE</tab1></p></font>
     </div>
 	<br></br>
+	<form action="http://www.google.com/search" method="get" onSubmit="Gsitesearch(this)">
     <div class="fl_right">
       <ul>
 		<div class="top-bar">
 		<div class="search-container">
+		
 			<input class="search" type="search" placeholder="&#128270;Search....">
 		</div>
 		</div>
@@ -157,6 +161,7 @@ tab1{
       </ul>
      
     </div>
+	</form>
     <br class="clear" />
   </div>
 </div>
@@ -184,9 +189,6 @@ tab1{
       </li>
 	  <li><a style="color:#FFFFFF;" href="Physl.php">Physical Links</a>
       </li>
-	  <li><a style="color:#FFFFFF;" href="AU.php">About Us</a>
-        
-      </li>
     </ul>
 	
   </div></font>
@@ -194,28 +196,8 @@ tab1{
 <!-- ####################################################################################################### -->
 
    
-	  
-	  </table></center>
-	  <br></br>
-	  <br></br>
-	  <br></br>
-	  <br></br>
-	  <br></br>
-	  <br></br>
-	  <br></br>
-      <br></br>
-	  <br></br>
-	  <br></br>
-	  <br></br>
-	  <br></br>
-	  <br></br>
-	  <br></br>
-	  <br></br>
-	  <br></br>
-	  <br></br>
-	  <br></br>
-	  <br></br>
-	  <br></br>
+	  </br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
+	 
         
 <div id="wrapper">
             <div id="center">

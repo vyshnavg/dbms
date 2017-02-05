@@ -16,7 +16,7 @@
 <style>
 #heading
 {
-	#heading { color: #FFFFFF; }
+  #heading { color: #FFFFFF; }
 }
 span.highlight {
     background-color: white;
@@ -46,16 +46,16 @@ span.highlight {
     width: 200px;
 }
 tab1{
-	padding-left:2em;
-	}
-	
+  padding-left:2em;
+  }
+  
 #left 
 {
     background: none repeat scroll 0 0 #99a3a4 ;
     float: left;
     margin: 0 ;
-	padding:0;
-	border:none;
+  padding:0;
+  border:none;
     width: 100%;
 }
 #center
@@ -66,32 +66,32 @@ tab1{
 
     width:100%;
     justify-content: center;
-	display: flex;
+  display: flex;
 }
 .one1 {
     border-style: solid;
     border-color: #800000;
-	
+  
 }
 .one {
     border-style: solid;
     border-color: #800000;
-	
-	background-color:#a93226;
-	
+  
+  background-color:#a93226;
+  
 }
 
 .two{
-	box-shadow: 10px 10px 5px #454545;
+  box-shadow: 10px 10px 5px #454545;
 }
 .img-circle {
     border-radius: 50%;
-	padding:10px;
-	justify-content: center
+  padding:10px;
+  justify-content: center
 
 }
 .container1{
-	border-radius: 47px 47px 47px 47px;
+  border-radius: 47px 47px 47px 47px;
 -moz-border-radius: 47px 47px 47px 47px;
 -webkit-border-radius: 47px 47px 47px 47px;
 border: 0px solid #000000;
@@ -100,7 +100,7 @@ width:500px;
 margin:auto;
 }
 .c{
-	background-color:#090659;
+  background-color:#090659;
 }
 
 .slideInLeft {
@@ -133,6 +133,37 @@ margin:auto;
   transform: translateX(0);
   }
   }
+  
+  
+div.angrytext {
+ font-size:20px;
+ font-weight:bold;
+ color:#4794D3;
+ width:300px;
+ margin:90px auto;
+ text-align:center;
+
+ -webkit-animation: change-color 3s ease 0s infinite normal ;
+ animation: change-color 3s ease 0s infinite normal ;
+}
+
+@-webkit-keyframes change-color {
+  0%{
+  color:green;
+  }
+  100%{
+  color:red;
+  }
+}
+
+@keyframes change-color {
+  0%{
+  color:green;
+  }
+  100%{
+  color:red;
+  }
+}
 </style>
 <body>
 <body bgcolor="#E6E6FA">
@@ -292,11 +323,20 @@ margin:auto;
 	</br>
 	</div>
 	</br></br></center></div></b>
-		<br></br>
-		<br></br>
-		<br></br>
-	</div>
-	</br></br></br></br></br></br>
+		<div class="slideInLeft"><div class="angrytext">BOOKS</div></div>
+  <div class="slideInLeft">
+    <div class="container1">
+      </br>
+      <center><b><a href="admin/add isbn.php"target="_blank" style="color:black" onclick="javascript:void window.open('\admin/add isbn.php','1441796471377','width=480,height=500,toolbar=0,menubar=0,location=0,status=1,scrollbars=1,resizable=0,left=0,top=0');return false;">ADD ISBN</a><br></br>
+      <a href="admin/remove isbn.php"target="_blank" style="color:black" onclick="javascript:void window.open('\admin/remove isbn.php','1441796471377','width=480,height=500,toolbar=0,menubar=0,location=0,status=1,scrollbars=1,resizable=0,left=0,top=0');return false;">REMOVE ISBN</a><br></br>
+      <a href="admin/add barcode.php"target="_blank" style="color:black" onclick="javascript:void window.open('\admin/add barcode.php','1441796471377','width=480,height=500,toolbar=0,menubar=0,location=0,status=1,scrollbars=1,resizable=0,left=0,top=0');return false;">ADD BARCODE</a><br></br>
+      <a href="admin/remove barcode.php"target="_blank" style="color:black" onclick="javascript:void window.open('\admin/remove barcode.php','1441796471377','width=480,height=500,toolbar=0,menubar=0,location=0,status=1,scrollbars=1,resizable=0,left=0,top=0');return false;">REMOVE BARCODE</a><br></br>
+      </b></br>
+    </center>
+    </div>
+  </div>
+  </div>
+  </br></br></br></br></br></br>
 <div class ="c">
 <br></br>
 </div>

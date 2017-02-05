@@ -454,7 +454,7 @@ setInterval(function() {
 			<tab3></tab3>
 			(both oral and mail) is strictly prohibited.</br></b>
 			
-			<p> <strong><tab3></tab3>GENERAL INSTRUCTION</strong><br>
+			<tab3></tab3><p> <strong>GENERAL INSTRUCTION</strong><br>
 			<br>
 			<tab3></tab3>1. Identity Card is a must for library transaction.<br>
 			<tab3></tab3>2. Faculty can borrow twenty books, UG Students can borrow two books, PG students can borrow four books and </br><tab3></tab3>Research Scholars can borrow six books from any of the above libraries.<br>

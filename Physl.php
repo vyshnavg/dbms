@@ -10,6 +10,98 @@
 <link rel="icon" href="https://upload.wikimedia.org/wikipedia/en/4/48/This_is_the_graphical_mascot_of_Christ_University,_Bangalore.png">
 </head>
 <style>
+.rubberBand {
+  -webkit-animation-name: rubberBand;
+  animation-name: rubberBand;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  }
+  @-webkit-keyframes rubberBand {
+  0% {
+  -webkit-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
+  }
+  30% {
+  -webkit-transform: scale3d(1.25, 0.75, 1);
+  transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+  -webkit-transform: scale3d(0.75, 1.25, 1);
+  transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+  -webkit-transform: scale3d(1.15, 0.85, 1);
+  transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+  -webkit-transform: scale3d(.95, 1.05, 1);
+  transform: scale3d(.95, 1.05, 1);
+  }
+  75% {
+  -webkit-transform: scale3d(1.05, .95, 1);
+  transform: scale3d(1.05, .95, 1);
+  }
+  100% {
+  -webkit-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
+  }
+  }
+  @keyframes rubberBand {
+  0% {
+  -webkit-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
+  }
+  30% {
+  -webkit-transform: scale3d(1.25, 0.75, 1);
+  transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+  -webkit-transform: scale3d(0.75, 1.25, 1);
+  transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+  -webkit-transform: scale3d(1.15, 0.85, 1);
+  transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+  -webkit-transform: scale3d(.95, 1.05, 1);
+  transform: scale3d(.95, 1.05, 1);
+  }
+  75% {
+  -webkit-transform: scale3d(1.05, .95, 1);
+  transform: scale3d(1.05, .95, 1);
+  }
+  100% {
+  -webkit-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
+  }
+  } 
+
+.btn {
+  background: #19288a;
+  background-image: -webkit-linear-gradient(top, #19288a, #211b52);
+  background-image: -moz-linear-gradient(top, #19288a, #211b52);
+  background-image: -ms-linear-gradient(top, #19288a, #211b52);
+  background-image: -o-linear-gradient(top, #19288a, #211b52);
+  background-image: linear-gradient(to bottom, #19288a, #211b52);
+  -webkit-border-radius: 60;
+  -moz-border-radius: 60;
+  border-radius: 60px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 9px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #3cb0fd;
+  text-decoration: none;
+}
+
+
 #heading
 {
 	#heading { color: #FFFFFF; }
@@ -146,10 +238,12 @@ tab1{
       <font color="white"><p><tab1>EXCELLENCE AND SERVICE</tab1></p></font>
     </div>
 	<br></br>
+	<form action="http://www.google.com/search" method="get" onSubmit="Gsitesearch(this)">
     <div class="fl_right">
       <ul>
 		<div class="top-bar">
 		<div class="search-container">
+		
 			<input class="search" type="search" placeholder="&#128270;Search....">
 		</div>
 		</div>
@@ -157,6 +251,7 @@ tab1{
       </ul>
      
     </div>
+	</form>
     <br class="clear" />
   </div>
 </div>
@@ -184,40 +279,23 @@ tab1{
       </li>
 	  <li><a style="color:#FFFFFF;" href="Physl.php">Physical Links</a>
       </li>
-	  <li><a style="color:#FFFFFF;" href="AU.php">About Us</a>
-        
-      </li>
     </ul>
 	
   </div></font>
 </div>
 <!-- ####################################################################################################### -->
-
-     
-	  
-	  
-	  </table></center>
-	  <br></br>
-	  <br></br>
-	  <br></br>
-	  <br></br>
-	  <br></br>
-	  <br></br>
-	  <br></br>
-      <br></br>
-	  <br></br>
-	  <br></br>
-	  <br></br>
-	  <br></br>
-	  <br></br>
-	  <br></br>
-	  <br></br>
-	  <br></br>
-	  <br></br>
-	  <br></br>
-	  <br></br>
-	  <br></br>
-        
+</br></br></br></br></br></br></br></br></br>
+   <div class="rubberBand">
+   <center>
+	  <a href="http://christuniversitylibrary.summon.serialssolutions.com/#!/"><button class="btn">Summons</button>
+	  <a href="http://christuniversitylibrary.wordpress.com/"><button class="btn">Library Blog</button>
+	  <a href="http://journals.christuniversity.in/"><button class="btn">Open Journal System</button>
+	  <a href="http://christuniversitylibrary.wordpress.com/rules-regulations/"><button class="btn">Rules and Regulations</button>
+	  </center>
+	  </div>
+	  <br></br></br></br></br></br></br></br></br></br></br></br>
+	 
+ <!-- ####################################################################################################### -->       
 <div id="wrapper">
             <div id="center">
 			<h3><b><p>Follow Us On:</p></b></h3><br><br>

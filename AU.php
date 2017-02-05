@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <head>
 <title>CHRIST UNIVERSITY_LIBRARY</title>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
@@ -7,7 +7,6 @@
 <script type="text/javascript" src="layout/scripts/jquery.slidepanel.setup.js"></script>
 <script type="text/javascript" src="layout/scripts/jquery.ui.min.js"></script>
 <script type="text/javascript" src="layout/scripts/jquery.tabs.setup.js"></script>
-<link rel="icon" href="https://upload.wikimedia.org/wikipedia/en/4/48/This_is_the_graphical_mascot_of_Christ_University,_Bangalore.png">
 </head>
 <style>
 #heading
@@ -95,7 +94,13 @@ tab1{
 <div class="wrapper col0">
   <div id="topbar">
     
-    
+    <div id="loginpanel">
+	
+      <ul>
+        <li class="left">Log In Here&raquo;</li>
+        <li class="right" id="toggle"><a id="slideit" href="#slidepanel">Click Here</a><a id="closeit" style="display: none;" href="#slidepanel">Close Panel</a></li>
+      </ul>
+    </div>
     <br class="clear" />
 	<div id="slidepanel">
       <div class="topbox">
@@ -129,13 +134,7 @@ tab1{
       <br class="clear" />
     </div>
   </div>
-</div></div><div id="loginpanel">
-	
-      <ul>
-        <li class="left">Log In Here&raquo;</li>
-        <li class="right" id="toggle"><a href="login.php"><font color="white">Click Here</font></a><a style="display: none;" href="#slidepanel"><font color="red">Close Panel</font></a></li>
-      </ul>
-    </div>
+</div>
 <!-- ####################################################################################################### -->
 <div class="wrapper col1">
   <div id="header">
@@ -177,7 +176,10 @@ tab1{
      
 	  <li><a style="color:#FFFFFF;" href="Rep.php">Repository</a>
        
-      
+      </li>
+	  <li><a style="color:#FFFFFF;" href="IM.php">Institutional Membership</a>
+        
+      </li>
 	  <li><a style="color:#FFFFFF;" href="RRM.php">Research/Reference Manager</a>
         
       </li>
