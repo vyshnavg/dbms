@@ -95,7 +95,7 @@ tab1{
 -moz-border-radius: 47px 47px 47px 47px;
 -webkit-border-radius: 47px 47px 47px 47px;
 border: 0px solid #000000;
-background-color:#bdc3c7 ;
+background-color:#ecaa24  ;
 width:500px;
 margin:auto;
 }
@@ -103,6 +103,36 @@ margin:auto;
 	background-color:#090659;
 }
 
+.slideInLeft {
+  -webkit-animation-name: slideInLeft;
+  animation-name: slideInLeft;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  }
+  @-webkit-keyframes slideInLeft {
+  0% {
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+  visibility: visible;
+  }
+  100% {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  }
+  }
+  @keyframes slideInLeft {
+  0% {
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+  visibility: visible;
+  }
+  100% {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  }
+  }
 </style>
 <body>
 <body bgcolor="#E6E6FA">
@@ -156,8 +186,8 @@ margin:auto;
 </div><div id="loginpanel">
 	
       <ul>
-        <li class="left">Log In Here&raquo;</li>
-        <li class="right" id="toggle"><a href="login.php"><font color="white">Click Here</font></a><a style="display: none;" href="#slidepanel"><font color="red">Close Panel</font></a></li>
+        <li class="left">&raquo;</li>
+        <li class="right" id="toggle"><a href="login.php"><font color="white">Log out</font></a><a style="display: none;" href="#slidepanel"><font color="red">Close Panel</font></a></li>
       </ul>
     </div>
 <!-- ####################################################################################################### -->
@@ -168,10 +198,12 @@ margin:auto;
       <font color="white"><p><tab1>EXCELLENCE AND SERVICE</tab1></p></font>
     </div>
 	<br></br>
+	<form action="http://www.google.com/search" method="get" onSubmit="Gsitesearch(this)">
     <div class="fl_right">
       <ul>
 		<div class="top-bar">
 		<div class="search-container">
+		
 			<input class="search" type="search" placeholder="&#128270;Search....">
 		</div>
 		</div>
@@ -179,10 +211,12 @@ margin:auto;
       </ul>
      
     </div>
+	</form>
     <br class="clear" />
   </div>
 </div>
 <!-- ####################################################################################################### -->
+
 <div class="wrapper col2">
   <div id="topnav">
   
@@ -206,39 +240,61 @@ margin:auto;
       </li>
 	  <li><a style="color:#FFFFFF;" href="Physl.php">Physical Links</a>
       </li>
-	  <li><a style="color:#FFFFFF;" href="AU.php">About Us</a>
-        
-      </li>
+	  
     </ul>
 	
   </div></font>
 </div>
 <!-- ####################################################################################################### -->
+<b></br></br>
+<center>
+<h1>
 
-<center><h1>
 <?php 
   echo "Admin Panel<br>Welcome ".$_SESSION['admin_id'];
  ?>
-</h1></center>
+</h1><center>
+<div class="slideInLeft"><Font color="#0e1ea0 " size="4">ADMIN</font>
+
 
 	<div class="container1">
-		<br></br><br></br>
-		<center>
+		</br>
 		<a href="admin/add admin.php" target="_blank" style="color:black" onclick="javascript:void window.open('\admin/add admin.php','1441796471377','width=480,height=500,toolbar=0,menubar=0,location=0,status=1,scrollbars=1,resizable=0,left=0,top=0');return false;">ADD ADMIN</a><br></br>
 		<a href="admin/remove admin.php" target="_blank" style="color:black" onclick="javascript:void window.open('\admin/remove admin.php','1441796471377','width=480,height=500,toolbar=0,menubar=0,location=0,status=1,scrollbars=1,resizable=0,left=0,top=0');return false;">REMOVE ADMIN</a><br></br>
 		<a href="admin/edit admin.php" target="_blank" style="color:black" onclick="javascript:void window.open('\admin/edit admin.php','1441796471377','width=480,height=500,toolbar=0,menubar=0,location=0,status=1,scrollbars=1,resizable=0,left=0,top=0');return false;">EDIT ADMIN</a><br></br>
+		<a href="admin/display all admin.php" target="_blank" style="color:black" onclick="javascript:void window.open('\admin/display all admins.php','1441796471377','width=480,height=500,toolbar=0,menubar=0,location=0,status=1,scrollbars=1,resizable=0,left=0,top=0');return false;">DISPLAY ALL ADMINS</a><br></br>
+	</br></div>
+	</div></center>
+	
+	<center>
+	</br></br>
+	<div class="slideInLeft"><Font color="#0e1ea0 " size="4">STUDENT</font>
+	<div class="container1">
+	</br>
 		<a href="admin/add student.php" target="_blank" style="color:black" onclick="javascript:void window.open('\admin/add student.php','1441796471377','width=480,height=500,toolbar=0,menubar=0,location=0,status=1,scrollbars=1,resizable=0,left=0,top=0');return false;">ADD STUDENT</a><br></br>
 		<a href="admin/remove student.php" target="_blank" style="color:black" onclick="javascript:void window.open('\admin/remove student.php','1441796471377','width=480,height=500,toolbar=0,menubar=0,location=0,status=1,scrollbars=1,resizable=0,left=0,top=0');return false;">REMOVE STUDENT</a><br></br>
 		<a href="admin/edit student.php" target="_blank" style="color:black" onclick="javascript:void window.open('\admin/edit student.php','1441796471377','width=480,height=500,toolbar=0,menubar=0,location=0,status=1,scrollbars=1,resizable=0,left=0,top=0');return false;">EDIT STUDENT</a><br></br>
+		<a href="admin/display all student.php" target="_blank" style="color:black" onclick="javascript:void window.open('\admin/display all students .php','1441796471377','width=480,height=500,toolbar=0,menubar=0,location=0,status=1,scrollbars=1,resizable=0,left=0,top=0');return false;">DISPLAY ALL STUDENTS</a><br></br>
+	</br>
+	</div></center>
+	</div>
+	</br></br>
+	
+	<center>
+	</br>
+	<div class="slideInLeft"><Font color="#0e1ea0 " size="4">STAFF</font>
+	<div class="container1">
+	</br>
 		<a href="admin/add staff.php" target="_blank" style="color:black" onclick="javascript:void window.open('\admin/add staff.php','1441796471377','width=480,height=500,toolbar=0,menubar=0,location=0,status=1,scrollbars=1,resizable=0,left=0,top=0');return false;">ADD STAFF</a><br></br>
 		<a href="admin/remove staff.php" target="_blank" style="color:black" onclick="javascript:void window.open('\admin/remove staff.php','1441796471377','width=480,height=500,toolbar=0,menubar=0,location=0,status=1,scrollbars=1,resizable=0,left=0,top=0');return false;">REMOVE STAFF</a><br></br>
 		<a href="admin/edit staff.php" target="_blank" style="color:black" onclick="javascript:void window.open('\admin/edit staff.php','1441796471377','width=480,height=500,toolbar=0,menubar=0,location=0,status=1,scrollbars=1,resizable=0,left=0,top=0');return false;">EDIT STAFF</a><br></br>
-		<a href="admin/display all admin.php" target="_blank" style="color:black" onclick="javascript:void window.open('\admin/display all admins.php','1441796471377','width=480,height=500,toolbar=0,menubar=0,location=0,status=1,scrollbars=1,resizable=0,left=0,top=0');return false;">DISPLAY ALL ADMINS</a><br></br>
-		<a href="admin/display all student.php" target="_blank" style="color:black" onclick="javascript:void window.open('\admin/display all students .php','1441796471377','width=480,height=500,toolbar=0,menubar=0,location=0,status=1,scrollbars=1,resizable=0,left=0,top=0');return false;">DISPLAY ALL STUDENTS</a><br></br>
 		<a href="admin/display all staff.php" target="_blank" style="color:black" onclick="javascript:void window.open('\admin/display all staff.php','1441796471377','width=480,height=500,toolbar=0,menubar=0,location=0,status=1,scrollbars=1,resizable=0,left=0,top=0');return false;">DISPLAY ALL STAFF</a><br></br>
+	</br>
+	</div>
+	</br></br></center></div></b>
 		<br></br>
 		<br></br>
-		<br></br></center>
+		<br></br>
 	</div>
 	</br></br></br></br></br></br>
 <div class ="c">
