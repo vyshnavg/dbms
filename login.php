@@ -13,35 +13,47 @@ tab{
 	padding-left:2em;
 }
 .btn {
-  background: #3498db;
-  background-image: -webkit-linear-gradient(top, #3498db, #0e3b57);
-  background-image: -moz-linear-gradient(top, #3498db, #0e3b57);
-  background-image: -ms-linear-gradient(top, #3498db, #0e3b57);
-  background-image: -o-linear-gradient(top, #3498db, #0e3b57);
-  background-image: linear-gradient(to bottom, #3498db, #0e3b57);
-  -webkit-border-radius: 8;
-  -moz-border-radius: 8;
-  border-radius: 8px;
-  font-family: Arial;
-  color: #ffffff;
-  font-size: 11px;
-  padding: 10px 20px 10px 20px;
-  text-decoration: none;
-}
-
-.btn:hover {
-  background: #3cb0fd;
-  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
-  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
-  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
-  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
-  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
-  text-decoration: none;
+  display: inline-block;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  cursor: pointer;
+  padding: 4px 27px 6px 20px;
+  border: 1px solid #018dc4;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  font: normal 16px/normal "Comic Sans MS", cursive, sans-serif;
+  color: rgba(255,255,255,0.9);
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  background: #0a1270;
+  -webkit-box-shadow: 0 0 3px 1px rgba(118,118,188,1) ;
+  box-shadow: 0 0 3px 1px rgba(118,118,188,1) ;
+  text-shadow: -1px -1px 0 rgba(15,73,168,0.66) ;
 }
 #textboxid
 {
-    height:15px;
-    font-size:14pt;
+     display: inline-block;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  margin: 2px;
+  padding: 10px 50px 10px 20px;
+  border: 1px solid #b7b7b7;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  font: normal 16px/normal "Comic Sans MS", cursive, sans-serif;
+  color: rgba(0,142,198,1);
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  -webkit-box-shadow: 0 0 6px 0 rgba(0,0,0,0.5) inset;
+  box-shadow: 0 0 6px 0 rgba(0,0,0,0.5) inset;
+  text-shadow: 1px 1px 0 rgba(255,255,255,0.66) ;
+  -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+
 }
 <!--container-->
 .borderexample
@@ -55,6 +67,7 @@ box-shadow: -2px 6px 30px -3px rgba(0,0,0,0.51);
 width:900px;
 margin:auto;
 }
+
 </style>
 <body>
 <br></br><br></br><br></br>
@@ -63,11 +76,11 @@ margin:auto;
 
 <center><form action="<?php echo $_SERVER['PHP_SELF'];?>" method="post">
   <div class="container">
-    <label><b><font size="4">Username</b></label>
-    <input id="textboxid" type="text"  name="emailid" required><br></br>
+    <label><b><font size="4"></b></label>
+    <input id="textboxid" type="text"  name="emailid" placeholder="USERNAME"required><br></br>
 
-    <label><b><h4>Password</b></label></font>
-    <input id="textboxid" type="password"  name="pass" required><br></br>
+    <label><b><h4></b></label></font>
+    <input id="textboxid" type="password"  name="pass" placeholder="PASSWORD" required><br></br>
         
 	<button class="btn" type="reset">Clear</button><tab></tab>
     <button class="btn" type="submit">Login</button><br></br>
