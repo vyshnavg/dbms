@@ -32,15 +32,15 @@ img{display:block; margin:0; padding:0; border:none;}
 
 div.wrapper{display:block; width:100%; margin:0; padding:0; text-align:left;}
 div.wrapper h1, div.wrapper h2, div.wrapper h3, div.wrapper h4, div.wrapper h5, div.wrapper h6{margin:0; padding:0; font-size:20px; font-weight:normal; line-height:normal; font-family:Georgia, "Times New Roman", Times, serif;}
-.col0{color:; background-color:black; border-top:#000033;}
+.col0{ background-color:black; border-top:#000033;}
 .col1, .col1 a{color:#FFFFFF; background-color:black;}
-.col2{color:#FFFFFF; background:#000033;}
+.col2{color:#FFFFFF; background:#000033;height:40px;}
 .col3{color:#FFFFFF; background-color:white;}
 .col4{color:#FFFFFF; background-color:white;}
 .col4 a{color:#FFFFFF; background-color:white;}
 .col5{color:#FFFFFF; background-color:#000033;}
 .col5 a{color:#FFFFFF; background-color:#000033s;}
-.col6, .col6 a{color:#FFFFFF; background-color:#000033;}
+.col6, .col6 a{color:#FFFFFF; background-color:#02031c ;}
 
 
 /* ----------------------------------------------Generalise------------------------------------- */
