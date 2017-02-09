@@ -10,6 +10,9 @@
 <link rel="icon" href="https://upload.wikimedia.org/wikipedia/en/4/48/This_is_the_graphical_mascot_of_Christ_University,_Bangalore.png">
 </head>
 <style>
+body {
+	background-color:#EEEEEE;
+}
 #heading
 {
 	#heading { color: #FFFFFF; }
@@ -188,6 +191,9 @@ tab1{
 	  <li><a style="color:#FFFFFF;" href="Physl.php">Physical Links</a>
       </li>
 	  
+	  </li>
+	  <li><a style="color:#FFFFFF;" href="AU.php">About Us</a>
+      </li>
     </ul>
 	
   </div></font>

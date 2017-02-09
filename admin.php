@@ -14,9 +14,13 @@
 <link rel="icon" href="https://upload.wikimedia.org/wikipedia/en/4/48/This_is_the_graphical_mascot_of_Christ_University,_Bangalore.png">
 </head>
 <style>
+body
+{
+	background-color:#EEEEEE;
+}
 #heading
 {
-  #heading { color: #FFFFFF; }
+	#heading { color: #FFFFFF; }
 }
 span.highlight {
     background-color: white;
@@ -46,16 +50,16 @@ span.highlight {
     width: 200px;
 }
 tab1{
-  padding-left:2em;
-  }
-  
+	padding-left:2em;
+	}
+	
 #left 
 {
     background: none repeat scroll 0 0 #99a3a4 ;
     float: left;
     margin: 0 ;
-  padding:0;
-  border:none;
+	padding:0;
+	border:none;
     width: 100%;
 }
 #center
@@ -66,44 +70,67 @@ tab1{
 
     width:100%;
     justify-content: center;
-  display: flex;
+	display: flex;
 }
 .one1 {
     border-style: solid;
     border-color: #800000;
-  
+	
 }
 .one {
     border-style: solid;
     border-color: #800000;
-  
-  background-color:#a93226;
-  
+	
+	background-color:#a93226;
+	
 }
 
 .two{
-  box-shadow: 10px 10px 5px #454545;
+	box-shadow: 10px 10px 5px #454545;
 }
 .img-circle {
     border-radius: 50%;
-  padding:10px;
-  justify-content: center
+	padding:10px;
+	justify-content: center
 
 }
 .container1{
-  border-radius: 47px 47px 47px 47px;
+	border-radius: 47px 47px 47px 47px;
 -moz-border-radius: 47px 47px 47px 47px;
 -webkit-border-radius: 47px 47px 47px 47px;
 border: 0px solid #000000;
 background-color:#ecaa24  ;
 width:500px;
-margin:auto;
+
+
+text-align:center;
+
 }
 .c{
-  background-color:#090659;
+	background-color:#090659;
 }
 
-.slideInLeft {
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+    width: 100%;
+    height: 900px;
+	text-align:left;
+}
+
+.flex-item {
+
+    width:50%;
+    height: 600px;
+	
+}
+tab1{
+	padding-left:11.5em;
+}
+tab2{
+	padding-left:10em;
+}
+ .slideInLeft {
   -webkit-animation-name: slideInLeft;
   animation-name: slideInLeft;
   -webkit-animation-duration: 2s;
@@ -132,38 +159,73 @@ margin:auto;
   -webkit-transform: translateX(0);
   transform: translateX(0);
   }
+  } 
+   .slideInRight {
+  -webkit-animation-name: slideInRight;
+  animation-name: slideInRight;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
   }
-  
-  
-div.angrytext {
- font-size:20px;
- font-weight:bold;
- color:#4794D3;
- width:300px;
- margin:90px auto;
- text-align:center;
+  @-webkit-keyframes slideInRight {
+  0% {
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+  visibility: visible;
+  }
+  100% {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  }
+  }
+  @keyframes slideInRight {
+  0% {
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+  visibility: visible;
+  }
+  100% {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  }
+  } 
+  .slideInUp {
+  -webkit-animation-name: slideInUp;
+  animation-name: slideInUp;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  }
+  @-webkit-keyframes slideInUp {
+  0% {
+  -webkit-transform: translateY(100%);
+  transform: translateY(100%);
+  visibility: visible;
+  }
+  100% {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  }
+  }
+  @keyframes slideInUp {
+  0% {
+  -webkit-transform: translateY(100%);
+  transform: translateY(100%);
+  visibility: visible;
+  }
+  100% {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  }
+  } 
+  .containerbottom
+  {
+	  background-color:black;
+	  height:20px;
+  }
 
- -webkit-animation: change-color 3s ease 0s infinite normal ;
- animation: change-color 3s ease 0s infinite normal ;
-}
-
-@-webkit-keyframes change-color {
-  0%{
-  color:green;
-  }
-  100%{
-  color:red;
-  }
-}
-
-@keyframes change-color {
-  0%{
-  color:green;
-  }
-  100%{
-  color:red;
-  }
-}
 </style>
 <body>
 <body bgcolor="#E6E6FA">
@@ -226,7 +288,7 @@ div.angrytext {
   <div id="header">
     <div id="logo">
       <h1><a href="ChristUniversity_library.php"><img src="images/logo.png"width="200" height="70" ></a></h1>
-      <font color="white"><p><tab1>EXCELLENCE AND SERVICE</tab1></p></font>
+      <font color="white"><p>EXCELLENCE AND SERVICE</p></font>
     </div>
 	<br></br>
 	<form action="http://www.google.com/search" method="get" onSubmit="Gsitesearch(this)">
@@ -272,6 +334,8 @@ div.angrytext {
 	  <li><a style="color:#FFFFFF;" href="Physl.php">Physical Links</a>
       </li>
 	  
+    <li><a style="color:#FFFFFF;" href="AU.php">About Us</a>
+      </li>
     </ul>
 	
   </div></font>
@@ -285,114 +349,125 @@ div.angrytext {
   echo "Admin Panel<br>Welcome ".$_SESSION['admin_id'];
  ?>
 </h1><center>
-<div class="slideInLeft"><Font color="#0e1ea0 " size="4">ADMIN</font>
-
-
-	<div class="container1">
+<div class="flex-container">
+	<div class="flex-item">
+	<div class="slideInLeft">
+	<b>
+		<h2><tab1></tab1>ADMIN</h2>
+		<div class="container1">
 		</br>
 		<a href="admin/add admin.php" target="_blank" style="color:black" onclick="javascript:void window.open('\admin/add admin.php','1441796471377','width=480,height=500,toolbar=0,menubar=0,location=0,status=1,scrollbars=1,resizable=0,left=0,top=0');return false;">ADD ADMIN</a><br></br>
 		<a href="admin/remove admin.php" target="_blank" style="color:black" onclick="javascript:void window.open('\admin/remove admin.php','1441796471377','width=480,height=500,toolbar=0,menubar=0,location=0,status=1,scrollbars=1,resizable=0,left=0,top=0');return false;">REMOVE ADMIN</a><br></br>
 		<a href="admin/edit admin.php" target="_blank" style="color:black" onclick="javascript:void window.open('\admin/edit admin.php','1441796471377','width=480,height=500,toolbar=0,menubar=0,location=0,status=1,scrollbars=1,resizable=0,left=0,top=0');return false;">EDIT ADMIN</a><br></br>
 		<a href="admin/display all admin.php" target="_blank" style="color:black" onclick="javascript:void window.open('\admin/display all admins.php','1441796471377','width=480,height=500,toolbar=0,menubar=0,location=0,status=1,scrollbars=1,resizable=0,left=0,top=0');return false;">DISPLAY ALL ADMINS</a><br></br>
-	</br></div>
-	</div></center>
+		</br>
+		</div>
+
 	
-	<center>
-	</br></br>
-	<div class="slideInLeft"><Font color="#0e1ea0 " size="4">STUDENT</font>
-	<div class="container1">
-	</br>
+
+
+		<h2><tab1></tab1>STUDENT</h2>
+		<div class="container1">
+		</br>
 		<a href="admin/add student.php" target="_blank" style="color:black" onclick="javascript:void window.open('\admin/add student.php','1441796471377','width=480,height=500,toolbar=0,menubar=0,location=0,status=1,scrollbars=1,resizable=0,left=0,top=0');return false;">ADD STUDENT</a><br></br>
 		<a href="admin/remove student.php" target="_blank" style="color:black" onclick="javascript:void window.open('\admin/remove student.php','1441796471377','width=480,height=500,toolbar=0,menubar=0,location=0,status=1,scrollbars=1,resizable=0,left=0,top=0');return false;">REMOVE STUDENT</a><br></br>
 		<a href="admin/edit student.php" target="_blank" style="color:black" onclick="javascript:void window.open('\admin/edit student.php','1441796471377','width=480,height=500,toolbar=0,menubar=0,location=0,status=1,scrollbars=1,resizable=0,left=0,top=0');return false;">EDIT STUDENT</a><br></br>
 		<a href="admin/display all student.php" target="_blank" style="color:black" onclick="javascript:void window.open('\admin/display all students .php','1441796471377','width=480,height=500,toolbar=0,menubar=0,location=0,status=1,scrollbars=1,resizable=0,left=0,top=0');return false;">DISPLAY ALL STUDENTS</a><br></br>
-	</br>
-	</div></center>
-	</div>
-	</br></br>
+		</br>
+		</div>
+
 	
-	<center>
-	</br>
-	<div class="slideInLeft"><Font color="#0e1ea0 " size="4">STAFF</font>
-	<div class="container1">
-	</br>
+	
+	
+
+	
+		<h2><tab1></tab1>STAFF</h2>
+		<div class="container1">
+		</br>
 		<a href="admin/add staff.php" target="_blank" style="color:black" onclick="javascript:void window.open('\admin/add staff.php','1441796471377','width=480,height=500,toolbar=0,menubar=0,location=0,status=1,scrollbars=1,resizable=0,left=0,top=0');return false;">ADD STAFF</a><br></br>
 		<a href="admin/remove staff.php" target="_blank" style="color:black" onclick="javascript:void window.open('\admin/remove staff.php','1441796471377','width=480,height=500,toolbar=0,menubar=0,location=0,status=1,scrollbars=1,resizable=0,left=0,top=0');return false;">REMOVE STAFF</a><br></br>
 		<a href="admin/edit staff.php" target="_blank" style="color:black" onclick="javascript:void window.open('\admin/edit staff.php','1441796471377','width=480,height=500,toolbar=0,menubar=0,location=0,status=1,scrollbars=1,resizable=0,left=0,top=0');return false;">EDIT STAFF</a><br></br>
 		<a href="admin/display all staff.php" target="_blank" style="color:black" onclick="javascript:void window.open('\admin/display all staff.php','1441796471377','width=480,height=500,toolbar=0,menubar=0,location=0,status=1,scrollbars=1,resizable=0,left=0,top=0');return false;">DISPLAY ALL STAFF</a><br></br>
-	</br>
+		</br>
+		</div>
+		</div>
 	</div>
-	</br></br></center></div></b>
-		<div class="slideInLeft"><div class="angrytext">BOOKS</div></div>
-  <div class="slideInLeft">
-    <div class="container1">
-      </br>
-      <center><b><a href="admin/add isbn.php"target="_blank" style="color:black" onclick="javascript:void window.open('\admin/add isbn.php','1441796471377','width=480,height=500,toolbar=0,menubar=0,location=0,status=1,scrollbars=1,resizable=0,left=0,top=0');return false;">ADD ISBN</a><br></br>
-      <a href="admin/remove isbn.php"target="_blank" style="color:black" onclick="javascript:void window.open('\admin/remove isbn.php','1441796471377','width=480,height=500,toolbar=0,menubar=0,location=0,status=1,scrollbars=1,resizable=0,left=0,top=0');return false;">REMOVE ISBN</a><br></br>
-      <a href="admin/add barcode.php"target="_blank" style="color:black" onclick="javascript:void window.open('\admin/add barcode.php','1441796471377','width=480,height=500,toolbar=0,menubar=0,location=0,status=1,scrollbars=1,resizable=0,left=0,top=0');return false;">ADD BARCODE</a><br></br>
-      <a href="admin/remove barcode.php"target="_blank" style="color:black" onclick="javascript:void window.open('\admin/remove barcode.php','1441796471377','width=480,height=500,toolbar=0,menubar=0,location=0,status=1,scrollbars=1,resizable=0,left=0,top=0');return false;">REMOVE BARCODE</a><br></br>
-      <a href="admin/display all isbn.php"target="_blank" style="color:black" onclick="javascript:void window.open('\admin/display all isbn.php','1441796471377','width=480,height=500,toolbar=0,menubar=0,location=0,status=1,scrollbars=1,resizable=0,left=0,top=0');return false;">DISPLAY ALL BOOKS</a><br></br>
-      <a href="admin/display all barcode.php"target="_blank" style="color:black" onclick="javascript:void window.open('\admin/display all barcode.php','1441796471377','width=480,height=500,toolbar=0,menubar=0,location=0,status=1,scrollbars=1,resizable=0,left=0,top=0');return false;">DISPLAY SUB BOOKS</a><br></br>
-      <a href="admin/add publisher.php"target="_blank" style="color:black" onclick="javascript:void window.open('\admin/add publisher.php','1441796471377','width=480,height=500,toolbar=0,menubar=0,location=0,status=1,scrollbars=1,resizable=0,left=0,top=0');return false;">ADD PUBLISHER</a><br></br>
-      <a href="admin/remove publisher.php"target="_blank" style="color:black" onclick="javascript:void window.open('\admin/remove publisher.php','1441796471377','width=480,height=500,toolbar=0,menubar=0,location=0,status=1,scrollbars=1,resizable=0,left=0,top=0');return false;">REMOVE PUBLISHER</a><br></br>
-      <a href="admin/display all publisher.php"target="_blank" style="color:black" onclick="javascript:void window.open('\admin/display all publisher.php','1441796471377','width=480,height=500,toolbar=0,menubar=0,location=0,status=1,scrollbars=1,resizable=0,left=0,top=0');return false;">DISPLAY ALL PUBLISHER</a><br></br>
+	</b>
 
-      </b></br>
-    </center>
-    </div>
-  </div>
-  
-  <div class="slideInLeft"><div class="angrytext">CD's</div></div>
-  <div class="slideInLeft">
-    <div class="container1">
-      </br>
-      <center><b><a href="admin/add cd.php"target="_blank" style="color:black" onclick="javascript:void window.open('\admin/add cd.php','1441796471377','width=480,height=500,toolbar=0,menubar=0,location=0,status=1,scrollbars=1,resizable=0,left=0,top=0');return false;">ADD CD</a><br></br>
-      <a href="admin/remove cd.php"target="_blank" style="color:black" onclick="javascript:void window.open('\admin/remove cd.php','1441796471377','width=480,height=500,toolbar=0,menubar=0,location=0,status=1,scrollbars=1,resizable=0,left=0,top=0');return false;">REMOVE CD</a><br></br>
-      <a href="admin/display all cd.php"target="_blank" style="color:black" onclick="javascript:void window.open('\admin/display all cd.php','1441796471377','width=480,height=500,toolbar=0,menubar=0,location=0,status=1,scrollbars=1,resizable=0,left=0,top=0');return false;">DISPLAY ALL CD's</a><br></br>
-      </b></br>
-    </center>
-    </div>
-  </div>
-  
-  <div class="slideInLeft"><div class="angrytext">MAGAZINE</div></div>
-  <div class="slideInLeft">
-    <div class="container1">
-      </br>
-      <center><b><a href="admin/add magazine.php"target="_blank" style="color:black" onclick="javascript:void window.open('\admin/add magazine.php','1441796471377','width=480,height=500,toolbar=0,menubar=0,location=0,status=1,scrollbars=1,resizable=0,left=0,top=0');return false;">ADD MAGAZINE</a><br></br>
-      <a href="admin/remove magazine.php"target="_blank" style="color:black" onclick="javascript:void window.open('\admin/remove magazine.php','1441796471377','width=480,height=500,toolbar=0,menubar=0,location=0,status=1,scrollbars=1,resizable=0,left=0,top=0');return false;">REMOVE MAGAZINE</a><br></br>
-      <a href="admin/display all magazine.php"target="_blank" style="color:black" onclick="javascript:void window.open('\admin/display all magazine.php','1441796471377','width=480,height=500,toolbar=0,menubar=0,location=0,status=1,scrollbars=1,resizable=0,left=0,top=0');return false;">DISPLAY ALL MAGAZINE</a><br></br>
-      </b></br>
-    </center>
-    </div>
-  </div>
-  
-  <div class="slideInLeft"><div class="angrytext">NEWSPAPER</div></div>
-  <div class="slideInLeft">
-    <div class="container1">
-      </br>
-      <center><b><a href="admin/add newspaper.php"target="_blank" style="color:black" onclick="javascript:void window.open('\admin/add newspaper.php','1441796471377','width=480,height=500,toolbar=0,menubar=0,location=0,status=1,scrollbars=1,resizable=0,left=0,top=0');return false;">ADD NEWSPAPER</a><br></br>
-      <a href="admin/remove newspaper.php"target="_blank" style="color:black" onclick="javascript:void window.open('\admin/remove newspaper.php','1441796471377','width=480,height=500,toolbar=0,menubar=0,location=0,status=1,scrollbars=1,resizable=0,left=0,top=0');return false;">REMOVE NEWSPAPER</a><br></br>
-      <a href="admin/display all newspaper.php"target="_blank" style="color:black" onclick="javascript:void window.open('\admin/display all newspaper.php','1441796471377','width=480,height=500,toolbar=0,menubar=0,location=0,status=1,scrollbars=1,resizable=0,left=0,top=0');return false;">DISPLAY ALL NEWSPAPER</a><br></br>
-      </b></br>
-    </center>
-    </div>
-  </div>
-  
-  <div class="slideInLeft"><div class="angrytext">EXAMPAPER</div></div>
-  <div class="slideInLeft">
-    <div class="container1">
-      </br>
-      <center><b><a href="admin/add exampaper.php"target="_blank" style="color:black" onclick="javascript:void window.open('\admin/add exampaper.php','1441796471377','width=480,height=500,toolbar=0,menubar=0,location=0,status=1,scrollbars=1,resizable=0,left=0,top=0');return false;">ADD EXAMPAPER</a><br></br>
-      <a href="admin/remove exampaper.php"target="_blank" style="color:black" onclick="javascript:void window.open('\admin/remove exampaper.php','1441796471377','width=480,height=500,toolbar=0,menubar=0,location=0,status=1,scrollbars=1,resizable=0,left=0,top=0');return false;">REMOVE EXAMPAPER</a><br></br>
-      <a href="admin/display all exampaper.php"target="_blank" style="color:black" onclick="javascript:void window.open('\admin/display all exampaper.php','1441796471377','width=480,height=500,toolbar=0,menubar=0,location=0,status=1,scrollbars=1,resizable=0,left=0,top=0');return false;">DISPLAY ALL EXAMPAPER</a><br></br>
-      </b></br>
-    </center>
-    </div>
-  </div>
-  </div>
-  </br></br></br></br></br></br>
-<div class ="c">
-<br></br>
+	
+	<div class="flex-item">
+	<div class="slideInUp">
+			<h2><tab1></tab1>BOOKS</h2>
+			<div class="container1">
+			</br>
+			<b><a href="admin/add isbn.php"target="_blank" style="color:black" onclick="javascript:void window.open('\admin/add isbn.php','1441796471377','width=480,height=500,toolbar=0,menubar=0,location=0,status=1,scrollbars=1,resizable=0,left=0,top=0');return false;">ADD ISBN</a><br></br>
+			<a href="admin/remove isbn.php"target="_blank" style="color:black" onclick="javascript:void window.open('\admin/remove isbn.php','1441796471377','width=480,height=500,toolbar=0,menubar=0,location=0,status=1,scrollbars=1,resizable=0,left=0,top=0');return false;">REMOVE ISBN</a><br></br>
+			<a href="admin/add barcode.php"target="_blank" style="color:black" onclick="javascript:void window.open('\admin/add barcode.php','1441796471377','width=480,height=500,toolbar=0,menubar=0,location=0,status=1,scrollbars=1,resizable=0,left=0,top=0');return false;">ADD BARCODE</a><br></br>
+			<a href="admin/remove barcode.php"target="_blank" style="color:black" onclick="javascript:void window.open('\admin/remove barcode.php','1441796471377','width=480,height=500,toolbar=0,menubar=0,location=0,status=1,scrollbars=1,resizable=0,left=0,top=0');return false;">REMOVE BARCODE</a><br></br>
+			<a href="admin/display all isbn.php"target="_blank" style="color:black" onclick="javascript:void window.open('\admin/display all isbn.php','1441796471377','width=480,height=500,toolbar=0,menubar=0,location=0,status=1,scrollbars=1,resizable=0,left=0,top=0');return false;">DISPLAY ALL BOOKS</a><br></br>
+			<a href="admin/display all barcode.php"target="_blank" style="color:black" onclick="javascript:void window.open('\admin/display all barcode.php','1441796471377','width=480,height=500,toolbar=0,menubar=0,location=0,status=1,scrollbars=1,resizable=0,left=0,top=0');return false;">DISPLAY SUB BOOKS</a><br></br>
+			<a href="admin/add publisher.php"target="_blank" style="color:black" onclick="javascript:void window.open('\admin/add publisher.php','1441796471377','width=480,height=500,toolbar=0,menubar=0,location=0,status=1,scrollbars=1,resizable=0,left=0,top=0');return false;">ADD PUBLISHER</a><br></br>
+			<a href="admin/remove publisher.php"target="_blank" style="color:black" onclick="javascript:void window.open('\admin/remove publisher.php','1441796471377','width=480,height=500,toolbar=0,menubar=0,location=0,status=1,scrollbars=1,resizable=0,left=0,top=0');return false;">REMOVE PUBLISHER</a><br></br>
+			<a href="admin/display all publisher.php"target="_blank" style="color:black" onclick="javascript:void window.open('\admin/display all publisher.php','1441796471377','width=480,height=500,toolbar=0,menubar=0,location=0,status=1,scrollbars=1,resizable=0,left=0,top=0');return false;">DISPLAY ALL PUBLISHER</a><br></br>
+
+			</br>
+		
+		</div>
+	
+
+	
+		<h2><tab1></tab1>CD's</h2>
+		<div class="container1">
+			</br>
+			<b><a href="admin/add cd.php"target="_blank" style="color:black" onclick="javascript:void window.open('\admin/add cd.php','1441796471377','width=480,height=500,toolbar=0,menubar=0,location=0,status=1,scrollbars=1,resizable=0,left=0,top=0');return false;">ADD CD</a><br></br>
+			<a href="admin/remove cd.php"target="_blank" style="color:black" onclick="javascript:void window.open('\admin/remove cd.php','1441796471377','width=480,height=500,toolbar=0,menubar=0,location=0,status=1,scrollbars=1,resizable=0,left=0,top=0');return false;">REMOVE CD</a><br></br>
+			<a href="admin/display all cd.php"target="_blank" style="color:black" onclick="javascript:void window.open('\admin/display all cd.php','1441796471377','width=480,height=500,toolbar=0,menubar=0,location=0,status=1,scrollbars=1,resizable=0,left=0,top=0');return false;">DISPLAY ALL CD's</a><br></br>
+			</br>
+		
+		</div>
+	</div>
+	</div>
+
+	<div class="flex-item">
+	<div class="slideInRight">
+		<h2><tab2></tab2>MAGAZINE</h2>
+		<div class="container1">
+			</br></br>
+			<b><a href="admin/add magazine.php"target="_blank" style="color:black" onclick="javascript:void window.open('\admin/add magazine.php','1441796471377','width=480,height=500,toolbar=0,menubar=0,location=0,status=1,scrollbars=1,resizable=0,left=0,top=0');return false;">ADD MAGAZINE</a><br></br>
+			<a href="admin/remove magazine.php"target="_blank" style="color:black" onclick="javascript:void window.open('\admin/remove magazine.php','1441796471377','width=480,height=500,toolbar=0,menubar=0,location=0,status=1,scrollbars=1,resizable=0,left=0,top=0');return false;">REMOVE MAGAZINE</a><br></br>
+			<a href="admin/display all magazine.php"target="_blank" style="color:black" onclick="javascript:void window.open('\admin/display all magazine.php','1441796471377','width=480,height=500,toolbar=0,menubar=0,location=0,status=1,scrollbars=1,resizable=0,left=0,top=0');return false;">DISPLAY ALL MAGAZINE</a><br></br>
+			</br></br>
+		</div>
+		
+	
+
+	
+		<h2><tab2></tab2>NEWSPAPER</h2>
+		<div class="container1">
+			</br></br>
+			<b><a href="admin/add newspaper.php"target="_blank" style="color:black" onclick="javascript:void window.open('\admin/add newspaper.php','1441796471377','width=480,height=500,toolbar=0,menubar=0,location=0,status=1,scrollbars=1,resizable=0,left=0,top=0');return false;">ADD NEWSPAPER</a><br></br>
+			<a href="admin/remove newspaper.php"target="_blank" style="color:black" onclick="javascript:void window.open('\admin/remove newspaper.php','1441796471377','width=480,height=500,toolbar=0,menubar=0,location=0,status=1,scrollbars=1,resizable=0,left=0,top=0');return false;">REMOVE NEWSPAPER</a><br></br>
+			<a href="admin/display all newspaper.php"target="_blank" style="color:black" onclick="javascript:void window.open('\admin/display all newspaper.php','1441796471377','width=480,height=500,toolbar=0,menubar=0,location=0,status=1,scrollbars=1,resizable=0,left=0,top=0');return false;">DISPLAY ALL NEWSPAPER</a><br></br>
+			</br></br>
+		
+		</div>
+	
+
+	
+
+		<h2><tab2></tab2>QUESTION <tab1></tab1>PAPERS</h2>
+		<div class="container1">
+			</br></br>
+			<b><a href="admin/add exampaper.php"target="_blank" style="color:black" onclick="javascript:void window.open('\admin/add exampaper.php','1441796471377','width=480,height=500,toolbar=0,menubar=0,location=0,status=1,scrollbars=1,resizable=0,left=0,top=0');return false;">ADD EXAMPAPER</a><br></br>
+			<a href="admin/remove exampaper.php"target="_blank" style="color:black" onclick="javascript:void window.open('\admin/remove exampaper.php','1441796471377','width=480,height=500,toolbar=0,menubar=0,location=0,status=1,scrollbars=1,resizable=0,left=0,top=0');return false;">REMOVE EXAMPAPER</a><br></br>
+			<a href="admin/display all exampaper.php"target="_blank" style="color:black" onclick="javascript:void window.open('\admin/display all exampaper.php','1441796471377','width=480,height=500,toolbar=0,menubar=0,location=0,status=1,scrollbars=1,resizable=0,left=0,top=0');return false;">DISPLAY ALL EXAMPAPER</a><br></br>
+			</br></br>
+		</div>
+		</div>
+	</div>
+		
+</div>
+<div class="containerbottom">
 </div>
 </body>
 </html>

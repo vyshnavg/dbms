@@ -72,7 +72,7 @@ margin:auto;
 <body>
 <br></br><br></br><br></br>
 <div class="container1">
-<center><img src="images/logo2.png"></center>
+<center><a href="ChristUniversity_library.php"><img src="images/logo2.png"></a></center>
 
 <center><form action="<?php echo $_SERVER['PHP_SELF'];?>" method="post">
   <div class="container">
@@ -127,12 +127,12 @@ margin:auto;
                 */
 
                 include 'dbh.php';
-                mysql_select_db("library");
+                //mysql_select_db("library");
 
                 $sql="SELECT * from admin where admin_id = '$username' and admin_password='$password'";
-                $result= mysql_query($sql);
+                $result= mysqli_query($conn ,$sql)or die(mysqli_error($conn));
 
-                if(!$row=mysql_fetch_assoc($result)){
+                if(!$row=mysqli_fetch_assoc($result)){
                   echo "Your username or password is incorrect!";
                 }
                 else{
